@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário na Prática</h1>
+<!-- 
+    Atributo method="get"= vai passar as informações que for passada nos inputs por parâmetro na url -
+     query-string.
+
+     O atributo action="", serve para dizer , pra onde vamos enviar os dados, é um caminho 
+
+     para algum arqui back-end EX; index.php Para pegar os dados e tratar eles.  ou pode ser outra sessão 
+     do site, no google e faz a pesquisa e mostra, não salva no banco dados
+-->
+    
+    <h3>Formulário com GET</h3>
+<form method="get" action="index.html">
+    <input type="text" name="q"> <!--E o input onde vamos digitar o que queremos buscar o (q) é de query de busca-->
+    <input type="submit" value="Enviar">        
+    <!--O botão que vamos usar para enviar os dados -->
+</form>
+    
+<h3>Formulário com POST </h3>
+<!-- Post é mais seguro, a pesquisa ou email senha preenchido, não aparecerão
+Se colocarmos twiter vai levar para um página de erro 
+por isso temos que mudar action="index.php", ia para um banco de dados e faz a verificação
+para ver se o usuário e veridico -->
+<form method="post" action="index.html">
+    <input type="text" name="q"> 
+    <input type="submit" value="Enviar">   
+</form>
+
+<h3>Formulário de login no facebook</h3>
+
+<form method="get" action="index.html" enctype="multipart/form-data"> 
+    <!--Action="index.html"  vamos enviar para mesma página
+     enctype="multipart/form-data"-Esse atributo o formulário está preparado para enviar imagens  -->
+    <input type="text" name="nome " id="nome" placeholder="nome">
+    <!--  -->
+    <input type="text" name="sobrenome " id="sobrenome" placeholder="sobrenome">
+
+    <input type="text" name="Celilar ou email" id="Celular ou email " placeholder="Celular ou email">
+
+    <input type="password" name="senha" id="senha" placeholder="Nova senha"> <br><br>
+    <!-- Select dos dias  -->
+    <label for="">Data de nascimento</label> <br> <!--Não vamos passar o atributo for pq vai ser o lebel para todos -->
+    <select name="dia">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+    <!-- Select dos meses -->
+    <select name="mes"> 
+        <option value="jan">jan</option>
+        <option value="fev">fev</option>
+        <option value="mar">mar</option>
+        <option value="abri">abr</option>
+        <option value="mai">mai</option>
+    </select>
+
+    <!-- Select do ano -->
+    <select name="ano">
+        <option value="2018">2018</option>
+        <option value="2019">2019</option>
+        <option value="2020">2020</option>
+        <option value="2021">2021</option>
+        <option value="2022">2022</option>
+
+    </select> <br><br>
+
+    <label for="">Gênero</label> <br>
+    
+    <label for="feminino">Feminino</label> 
+    <input id="feminino" type="radio" name="genero" value="feminino"> 
+
+    <label for="masculin">Masculino</label>
+    <input id="masculino" type="radio" name="genero" value="masculino">
+
+    <label for="personalizado">Personalizado</label>
+    <input id="personalizado" type="radio" name="genero" value="personalizado"><br><br>
+    
+    <input type="file"> 
+    <!--Podemos enviar uma imagen, mas a tag form tem que ter o atributo enctype="multipart/form-data"-->
+
+    <input type="submit" value="Enviar ">
+    <!-- Quando clicar em enviar, na url vai aparecer todos os dados que o usuário colocar  -->
+
+  
+
+</form> 
+
+</body>
+</html>

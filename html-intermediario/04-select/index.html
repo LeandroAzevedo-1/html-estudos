@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select</title>
+</head>
+<body>
+    <h1> Select </h1>
+<!-- 
+    A tag select dentro dela vamos criar a tag option-opção, onde o usuário pode escolher qual opção.
+
+     name="filmes" é o que vamos passar para o servidor.
+     A tag option com o atributo value é o que vamos passar para o servidor, para os  (back-end ) 
+
+     Ele vai estar dentro de um formulário, quando fazer o submit, vai enviar para o servidor 
+
+    O que vais ser enviado para o servidor e o que está dentro do atritubo value.
+
+    O primeiro option e impornte, porque se na página o usuário aperta o F5 vai aparecer sempre o 1º option - opção
+    
+    Se colocar selected na frente do value="Vingadores "EX , quando atualizar a página o nome do 
+    fime vingadores aparecerá primeiro 
+        -->
+    <label for="filmes ">Filmes </label>
+    <select id="filmes" name="filmes"> <!--Se colcoar o atributo multiple, podemos marcar vários -->
+        <option value="">Selecione um Filme </option>
+        <option value="Senhor dos anéis">Senhor dos anéis</option> 
+        <option value="Mad Max">Mad Max</option>
+        <option value="Harry Potte">Harry Potter</option>
+        <option value="Vingadore">Vingadore</option>
+    </select>
+
+
+</body>
+</html>
