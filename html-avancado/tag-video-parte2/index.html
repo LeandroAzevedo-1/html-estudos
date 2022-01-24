@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeo parte 2</title>
+</head>
+<body>
+    <!-- 1º Temos 3 extensões na web que pode ser usado em cada navegador
+        Extensão : .ogg,ogv-são da mesma familia,não funciona no navegador safari
+        Extenção : .mp4 é a mais usada 
+        Extensão : .webn
+        Para funcionar em todos os navegadore temos que usar com a 
+        tag source 
+     -->
+    <h1>Vídeo parte 2</h1>
+    <!-- <video src="./videos/video.mp4" width="200" 
+         controls muted loop poster="./images/thumb.jpg"></video> -->
+<!--     Essa forma carrega os vídeo de cima para baixo, aqui ele roda 
+         em todos os navegador  -->
+        <video controls width="300">
+            <source src="./videos/video.mp4" type="video/mp4">
+            <source src="./videos/video.ogv" type="video/ogg">
+            <source src="./videos/video.webn" type="video/webn">
+
+            <p>Esse navegador não tem suporte a tag vídeo.</p>
+        </video>
+  <!-- A vantege de usar essa tag assim, é hospedar em nosso servidor 
+       A desvantage é que temos que baixar todos os vídeo 
+       e tem vídeo que é pesado, tem vídeo que tem 10mb
+       Então a melhor forma é usar só o mp4 que é o mais usado ,
+       ou subi os vídeo para o youtube. deixar la hospedado  -->
+</body>
+</html>

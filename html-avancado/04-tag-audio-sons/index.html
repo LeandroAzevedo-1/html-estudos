@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio</title>
+</head>
+<body>
+    <h1>audio</h1>
+    <!-- tag audio 1º -->
+    <audio src="./audios/audio.mp3" controls autoplay
+    preload=""></audio><br><br>
+
+    <!-- Atributos 
+        
+        controls -> habilite todos os botões do audio
+
+        autoply  -> Toca automaticamente, mas no crome não funciona
+
+        preload -> auto.carrega todos os audio da página, metadata.carrega algumas infimações do audio, none. não carrega informação do audio. 
+    -->
+        <!-- 2º  -->
+    <audio controls>
+        <source src="./audios/audio.ogg" type="audio/ogg">
+        <source src="./audios/audio.mp3" type="audio/mp3">
+        <source src="./audios/audio.mav" type="audio/mav">
+        <p>Seu navegador não tem suporte a tag audio</p>
+        <!-- As vezes o criado do audio, pede o creditos para ele, tem que sitar ele no site  -->
+    </audio>
+
+    <!-- Site de conversão dos audio | https://convertio.co/pt/​​ 
+
+
+     -->
+    
+</body>
+</html>
