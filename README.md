@@ -8,4 +8,4 @@
 
 ### Sejam bem-vindo(a) 
 
-* Nesse repositório contem estudos, do básico ao avançado em html.
+* Nesse repositório contem estudos do básico ao avançado.
