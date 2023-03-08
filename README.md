@@ -8,4 +8,4 @@
 
 ### Sejam bem-vindo(a) 
 
-* Nesse repositório contem estudos do básico ao avançado.
+* Nesse repositório contém estudos do básico ao avançado.
