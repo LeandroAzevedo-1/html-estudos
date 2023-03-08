@@ -6,6 +6,6 @@
 
 <hr>
 
-### Sejam bem-vindo(a) 
+### Sejam bem-vindos(a) 
 
 * Nesse repositório contém estudos do básico ao avançado.
