@@ -26,10 +26,11 @@
 </form>
     
 <h3>Formulário com POST </h3>
-<!-- Post é mais seguro, a pesquisa ou email senha preenchido, não aparecerão
-Se colocarmos twiter vai levar para um página de erro 
-por isso temos que mudar action="index.php", ia para um banco de dados e faz a verificação
-para ver se o usuário e veridico -->
+<!-- 
+    Post é mais seguro, a pesquisa ou email senha preenchido, não aparecerão
+    Se colocarmos twiter vai levar para um página de erro 
+    por isso tem que mudar action="index.php", irá para um banco de dados e faz a verificação,
+    se o usuário e veridico ou nãao-->
 <form method="post" action="index.html">
     <input type="text" name="q"> 
     <input type="submit" value="Enviar">   
@@ -87,7 +88,7 @@ para ver se o usuário e veridico -->
     <input id="personalizado" type="radio" name="genero" value="personalizado"><br><br>
     
     <input type="file"> 
-    <!--Podemos enviar uma imagen, mas a tag form tem que ter o atributo enctype="multipart/form-data"-->
+    <!--Posso enviar uma imagen, mas a tag form tem que ter o atributo enctype="multipart/form-data"-->
 
     <input type="submit" value="Enviar ">
     <!-- Quando clicar em enviar, na url vai aparecer todos os dados que o usuário colocar  -->
